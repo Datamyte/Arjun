@@ -1,0 +1,220 @@
+header{
+  display:flex;
+  justify-content:flex-end;
+  height:120px;
+  width:100%;
+  background-color:#be3144;
+ }
+#navbar{
+  display:flex;
+  width:450px;
+  height:100%;
+  justify-content:space-around;
+}
+.nav{
+  color:#f0f0f0;
+  padding-top:30px;
+  text-decoration:none;
+  font-size:25px;
+  font-family:sans-serif;
+}
+img{
+  position:relative;
+  top:80px;
+  left:120px;
+  width:200px;
+   
+  border-radius:60%;
+}
+#mainsecond{
+  display:flex;
+  flex-direction:column;
+}
+#bio{
+  margin-top:-48px;
+  height:200px;
+  width:100%;
+  background-color:#2e2e2e;
+  color:#f0f0f0;
+}
+p{
+  margin:50px;
+  position:relative;
+  top:20px;
+  font-size:20px;
+  font-family:poppins;
+  text-align:center;
+  justify-content:center;
+  
+}
+
+main{
+ 
+  background-color:#303841;
+  height:350px;
+  width:100%;
+  margin-top:-34px;
+}
+h1{
+  position:relative;
+  text-align:center;
+  bottom:150px;
+  color:white;
+  font-family:raleway;
+  font-size:50px;
+}
+
+h2{
+  position:relative;
+  text-align:center;
+  bottom:200px; 
+  
+  color:white;
+  font-family:poppins;
+  font-size:30px;
+}
+h{
+  position:relative;
+  text-align:center;
+  justify-content:center;
+  color:white;
+  left:550px;
+ 
+  font-family:poppins;
+  font-size:30px;
+  
+ }
+ 
+#projects{
+  display:flex;
+  width:100%;
+  height:130px;
+}
+h3{
+  margin-top:25px;
+  font-family:raleway;
+}
+h4{
+  position:relative;
+  text-align:center;
+  top:70px;
+  color:white;
+  font-family:poppins;
+  font-size:30px;
+}
+
+h5{
+  position:relative;
+  text-align:center;
+  top:40px;
+  color:white;
+  font-family:poppins;
+  font-size:30px;
+}
+#ml{
+  display:flex;
+  height:100%;
+  width:25%;
+  background-color:#f52549;
+  color:#f0f0f0;
+  align-items:center;
+  justify-content:center;
+}
+
+#wp1{
+  display:flex;
+  height:100%;
+  width:25%;
+  background-color:#fa6775;
+  color:#f0f0f0;
+  text-algn:center;
+  justify-content:center;
+  align-items:center; 
+ 
+}
+#wp2{
+  display:flex; 
+  height:100%;
+  width:25%;
+  background-color:#ffd64d;
+  color:#f0f0f0;
+  align-items:center;
+  justify-content:center;
+ 
+   
+}
+
+#wp3{
+  display:flex; 
+  height:100%;
+  width:25%;
+  background-color:#9bc01c;
+  color:#f0f0f0;
+  align-items:center;
+  justify-content:center;
+}
+#contact{
+  background-color:#173F5F;
+  height:350px;
+  width:100%;
+  margin-top:-39px;
+}
+#contactlink{
+  display:flex;
+  width:80%;
+  justify-content:space-around;
+  position:relative;
+  text-align:center;
+  top:40px;
+  left:130px;
+  color:white;
+  font-family:poppins;
+  font-size:30px;
+  
+}
+.nav{
+  font-size:30px;
+  color:#f0f0f0;
+  text-decoration:none;
+}
+a{
+  color:#f0f0f0;
+  text-decoration:none;
+}
+footer{
+  display:flex;
+  justify-content:flex-end;
+  background-color:black;
+  height:100px;
+  width:100%;
+  color:#f0f0f0;
+  margin-top:-25px;
+  font-size:30px;
+  align-items:center;
+  }
+h6{
+  margin-right:20px;
+}
+
+a:hover{
+  transform:scale(1.01);
+}
+footer:hover{
+  transform:scale(1.003);
+  
+}
+#contact:hover{
+  transform:scale(1.003);
+}
+main:hover{
+  transform:scale(1.003);
+}
+header:hover{
+  transform:scale(1.003);
+}
+#contact:hover{
+  transform:scale(1.003);
+}
+#bio:hover{
+  transform:scale(1.003);
+}
