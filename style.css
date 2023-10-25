@@ -110,3 +110,32 @@ footer {
   padding: 10px 20px;
   align-items: center;
 }
+/* Adjust the image and text layout for larger screens */
+@media (min-width: 768px) {
+  #mainsecond {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    max-width: 25%;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  h1 {
+    position: static; /* Reset position */
+    text-align: left; /* Adjust the alignment as needed */
+    font-size: 32px; /* Adjust the font size as needed */
+    color: white;
+  }
+
+  h2 {
+    position: static; /* Reset position */
+    text-align: left; /* Adjust the alignment as needed */
+    font-size: 24px; /* Adjust the font size as needed */
+    color: white;
+  }
+}
+
