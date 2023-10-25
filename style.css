@@ -111,11 +111,12 @@ footer {
   align-items: center;
 }
  
+/* Adjust the image and text layout for larger screens */
 @media (min-width: 768px) {
   #mainsecond {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Change align-items to flex-start */
+    align-items: center;
   }
 
   img {
