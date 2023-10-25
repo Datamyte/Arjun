@@ -29,10 +29,14 @@ header {
 
 /* Logo Styles */
 img {
-  max-width: 100%;
+  position: relative;
+  top: 80px;
+  left: 120px;
+  max-width: 25%;
   height: auto;
   border-radius: 50%;
 }
+
 
 /* Main Content Styles */
 main {
