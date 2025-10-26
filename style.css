@@ -112,37 +112,36 @@ section p {
 
 .home-buttons {
   display: flex;
+  justify-content: center;
   gap: 1rem;
-  flex-wrap: wrap;
+  margin: 2rem auto;
+  width: 100%;
+}
+
+.btn, .btn-outline {
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .btn {
-  padding: 0.6rem 1.2rem;
-  background: #00bfff;
-  color: #121212;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: 500;
-  transition: background 0.3s;
-}
-
-.btn:hover {
-  background: #0099cc;
+  background-color: #007bff;
+  color: white;
 }
 
 .btn-outline {
-  padding: 0.6rem 1.2rem;
-  border: 1px solid #00bfff;
-  border-radius: 5px;
-  color: #00bfff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s;
+  border: 2px solid #007bff;
+  color: #007bff;
+}
+
+.btn:hover {
+  background-color: #0056b3;
 }
 
 .btn-outline:hover {
-  background: #00bfff;
-  color: #121212;
+  background-color: #007bff;
+  color: white;
 }
 
 /* Scroll prompt */
