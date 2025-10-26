@@ -265,5 +265,7 @@ footer {
     padding: 60px 3%;
   }
 
-  .projects-grid {
-    justify-content: center; /* center on small screens */
+    .projects-grid {
+      justify-content: center; /* center on small screens */
+    }
+  }
