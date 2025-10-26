@@ -1,56 +1,269 @@
- body {
-  font-family: 'Poppins', sans-serif;
+/* Reset & Basics */
+* {
   margin: 0;
   padding: 0;
-  color: #333;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-header {
-  background-color: #333;
-  color: white;
-  padding: 10px 20px;
-}
-
-nav a {
-  color: white;
+a {
+  color: #00bfff;
   text-decoration: none;
-  margin-right: 20px;
+  transition: color 0.3s;
 }
 
-nav a:hover {
-  text-decoration: underline;
+a:hover {
+  color: #0099cc;
 }
 
-#hero {
-  background-color: #be3144;
-  color: white;
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  color: #eee;
+  background: #121212;
+}
+
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+  background: #1e1e1e;
+  border-bottom: 1px solid #333;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2rem;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+  color: #00bfff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #eee;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #00bfff;
+}
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #00bfff;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+/* Sections full width, left-aligned by default */
+section {
+  width: 100%;
+  padding: 80px 5%;
+  text-align: left;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00bfff;
+}
+
+section p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+}
+
+/* Home section centered */
+#home {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 60px 20px;
 }
 
-#hero h1 {
-  font-size: 3rem;
+.home-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-#hero p {
-  font-size: 1.25rem;
+.btn {
+  padding: 0.6rem 1.2rem;
+  background: #00bfff;
+  color: #121212;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background 0.3s;
 }
 
-#about, #experience, #skills, #education, #contact {
-  padding: 40px 20px;
+.btn:hover {
+  background: #0099cc;
 }
 
-h2 {
-  color: #be3144;
+.btn-outline {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #00bfff;
+  border-radius: 5px;
+  color: #00bfff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
 }
 
-#contact a {
-  color: #be3144;
+.btn-outline:hover {
+  background: #00bfff;
+  color: #121212;
 }
 
+/* Scroll prompt */
+.scroll-prompt {
+  margin-top: 2rem;
+  text-align: center;
+  color: #00bfff;
+  animation: bounce 1.5s infinite;
+}
+
+.scroll-prompt span {
+  font-size: 2rem;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(10px); }
+  60% { transform: translateY(5px); }
+}
+
+/* Skills */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.skill {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: #00bfff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+/* Projects */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start; /* left-aligned */
+}
+
+.project-card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 1rem;
+  width: 300px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  background: #222;
+}
+
+.project-card a {
+  color: #00bfff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Experience */
+.experience-list {
+  list-style: none;
+}
+
+.experience-list li {
+  margin-bottom: 2rem;
+}
+
+.experience-list span {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+/* Contact left-aligned */
+#contact {
+  text-align: left;
+}
+
+.contact-center {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Footer */
 footer {
   text-align: center;
-  background-color: #333;
-  color: white;
-  padding: 10px 0;
+  padding: 1.5rem;
+  color: #aaa;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #1e1e1e;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  #home, #about, #skills, #projects, #experience, #contact {
+    padding: 60px 3%;
+  }
+
+  .projects-grid {
+    justify-content: center; /* center on small screens */
